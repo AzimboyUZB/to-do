@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.wrapper.them {
+  background-color: rgb(19, 19, 19);
+  transition: all 0.3s ease;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(163, 163, 163);
+  border-radius: 16px;
+  padding: 10px;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.container.them {
+  background-color: #505050;
+}
+
+.box__name {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.name.them {
+  color: #fff;
+}
+
+.switch {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(49, 145, 255);
+  border-radius: 100px;
+  border: none;
+  right: 7px;
+  top: 5px;
+  transition: all 0.3s ease;
+}
+
+.switch.them {
+  background-color: rgb(124, 124, 124);
+  transition: all 0.3s ease;
+}
+
+.box__input {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 85%;
+  height: 100%;
+  border: 1px solid gray;
+  border-radius: 10px 0 0 10px;
+  padding:  0 0 0 10px;
+}
+
+.submit {
+  width: 15%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(0, 110, 255);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+}
+
+.li {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.li.them {
+  color: #fff;
+}
+
+.box__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+}
+
+.box__btn {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.edit {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(0, 110, 255);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
