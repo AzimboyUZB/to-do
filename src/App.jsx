@@ -32,7 +32,6 @@ function App() {
   function editItem(id, value) {
     const editArray = items.filter(item => item.id && (item => item.value))
     setNewItem(editArray)
-    console.log(editArray);
   }
   return (
     <div className={them ? 'wrapper' : 'wrapper them'}>
